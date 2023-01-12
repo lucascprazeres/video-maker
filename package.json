@@ -1,0 +1,30 @@
+{
+  "name": "video-maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd ./src/index.ts",
+    "build": "tsc ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascprazeres/video-maker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucascprazeres/video-maker/issues"
+  },
+  "homepage": "https://github.com/lucascprazeres/video-maker#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/readline-sync": "^1.4.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
