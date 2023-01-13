@@ -1,10 +1,16 @@
 import readline from 'readline-sync'
+import { Content } from './models'
+import * as robots from './robots'
 
-function start() {
-  const content = {} as any
+async function start() {
+  const content = {} as Content
 
   content.searchTerm = askAndReturnSearchTerm()
   content.prefix = askAndReturnPrefix()
+
+  await robots.text(content)
+
+  console.log(content)
 
   function askAndReturnSearchTerm() {
     return readline.question('Type a Wikipedia search term: ')
@@ -17,8 +23,6 @@ function start() {
 
     return selectedPrefixText
   }
-
-  console.log(content)
 }
 
 start()
