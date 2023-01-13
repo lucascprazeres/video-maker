@@ -1,0 +1,1 @@
+export { robot as text } from './text'
